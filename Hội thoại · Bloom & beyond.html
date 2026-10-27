@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hội thoại · Bloom &amp; beyond</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,900,100,1&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--or:#e8431c;--or2:#ff7a45;--ink:#4b3340;--mut:#a38590;--ok:#1f9d55;--okb:#e1f6e9;--no:#d9435c;--nob:#fde7ec;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}html,body{margin:0}html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',system-ui,sans-serif;color:var(--ink);background:#bcdcef;padding-bottom:120px}
+.bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(180deg,#6fb2e2 0%,#a9d3ee 30%,#f3d9d0 62%,#f7c9c0 100%)}
+.bl{position:fixed;z-index:-1;border-radius:50%;filter:blur(46px);opacity:.75;animation:dr 16s ease-in-out infinite alternate}
+.b1{width:260px;height:260px;background:#ff8f8f;left:-60px;top:18%}.b2{width:300px;height:300px;background:#ffe28a;right:-80px;top:40%;animation-delay:-5s}.b3{width:240px;height:240px;background:#fbb2c4;left:20%;bottom:-60px;animation-delay:-9s}.b4{width:200px;height:200px;background:#b9e3a8;right:10%;bottom:6%;animation-delay:-3s}
+@keyframes dr{to{transform:translate(40px,-50px) scale(1.15)}}
+.gr{position:fixed;inset:0;z-index:-1;opacity:.22;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.6'/></svg>")}
+.pt{position:fixed;width:46px;height:46px;z-index:-1;opacity:.55;animation:fl 12s linear infinite;pointer-events:none}
+@keyframes fl{from{transform:translateY(105vh) rotate(0)}to{transform:translateY(-15vh) rotate(360deg)}}
+.pn{padding:60px 18px 40px;position:relative}.in{max-width:700px;margin:auto}
+.dp{font-family:Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100,'WONK' 1;font-weight:900;color:var(--or);line-height:.95;letter-spacing:-1px;text-transform:uppercase}
+.cap{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--or);font-weight:600}
+h2.dp{font-size:clamp(34px,9vw,58px);margin:6px 0 16px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero h1{font-size:clamp(54px,17vw,120px);margin:0;text-shadow:0 4px 30px rgba(255,255,255,.35)}
+.hero .bey{font-family:'Be Vietnam Pro',sans-serif;font-weight:500;font-size:clamp(22px,6vw,34px);color:var(--or);margin-top:6px}
+.fw{width:clamp(60px,16vw,100px);display:inline-block;vertical-align:middle;animation:sp 14s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.rv{opacity:0;transform:translateY(28px);transition:.9s cubic-bezier(.2,.8,.2,1)}.rv.v{opacity:1;transform:none}
+.card{background:rgba(255,255,255,.66);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.85);border-radius:26px;padding:20px;margin:14px 0;box-shadow:0 12px 36px rgba(232,67,28,.12)}
+.card h3{margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-variation-settings:'SOFT' 100;font-weight:900;color:var(--or);font-size:20px}
+p{line-height:1.7;margin:6px 0;font-size:15px}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--or);color:#fff;font-weight:600;margin-right:10px;flex:none}
+.row{display:flex;align-items:flex-start}
+.ph{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}.tg{background:#fff;border-radius:99px;padding:5px 13px;font-size:13.5px;font-weight:500;box-shadow:0 2px 8px rgba(232,67,28,.1)}.tg b{color:var(--or)}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.pc{background:rgba(255,255,255,.75);border-radius:20px;padding:14px 16px;transition:.3s;box-shadow:0 6px 18px rgba(232,67,28,.08)}.pc:hover{transform:translateY(-4px) rotate(-.6deg)}
+.pc b{display:block;color:var(--or);font-size:16px;margin-bottom:4px}.pc span{font-size:13.5px;line-height:1.55}
+.ctx{font-style:italic;color:var(--mut);font-size:13.5px;margin:2px 0 10px}
+.bub{max-width:90%;padding:10px 14px;border-radius:18px;margin:7px 0;font-size:15px;line-height:1.55;background:#fff;box-shadow:0 3px 10px rgba(0,0,0,.05)}
+.bub.r{margin-left:auto;background:linear-gradient(135deg,#ffe5d6,#ffd2dc);border-bottom-right-radius:4px}.bub.l{border-bottom-left-radius:4px}
+.bub u{text-decoration:none;display:inline-block;min-width:60px;border-bottom:2px dashed var(--or);color:var(--or);font-weight:600;transition:.3s}
+.bub u.ok{border-bottom:2px solid var(--ok);color:var(--ok)}.bub u.no{border-bottom:2px solid var(--no);color:var(--no)}
+.bub small{display:block;color:var(--mut);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+@media(max-width:520px){.opts{grid-template-columns:1fr}}
+.opt{text-align:left;padding:11px 14px;border-radius:14px;border:1.5px solid rgba(232,67,28,.22);background:#fff;color:var(--ink);font:500 14.5px 'Be Vietnam Pro',system-ui,sans-serif;line-height:1.45;cursor:pointer;transition:.2s}
+.opt:hover:not([disabled]){border-color:var(--or);transform:translateY(-2px)}.opt b{color:var(--or);margin-right:7px}
+.opt.ok{background:var(--okb);border-color:var(--ok)}.opt.no{background:var(--nob);border-color:var(--no);animation:sh .35s}.opt.dim{opacity:.55}.opt[disabled]{cursor:default}
+@keyframes sh{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.exp{margin-top:12px;padding:12px 14px;border-radius:16px;background:var(--okb);font-size:14px;line-height:1.6;animation:up .4s both}.exp.bd{background:var(--nob)}
+@keyframes up{from{opacity:0;transform:translateY(10px)}}
+.sc{position:sticky;top:calc(8px + env(safe-area-inset-top,0px));z-index:6;text-align:center;margin-bottom:6px}
+.sc span{display:inline-block;background:rgba(255,255,255,.92);padding:8px 18px;border-radius:99px;font-weight:600;font-size:14px;color:var(--or);box-shadow:0 6px 20px rgba(232,67,28,.2)}
+.btn{border:0;background:var(--or);color:#fff;font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:11px 20px;border-radius:99px;cursor:pointer;box-shadow:0 6px 18px rgba(232,67,28,.35)}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(22px + env(safe-area-inset-bottom,0px));display:flex;gap:3px;padding:7px;border-radius:26px;background:rgba(255,255,255,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 12px 36px rgba(232,67,28,.3);z-index:20;max-width:96vw}
+nav button{display:flex;align-items:center;gap:6px;border:1.5px solid transparent;background:none;color:var(--ink);font:600 13px 'Be Vietnam Pro',system-ui,sans-serif;padding:10px 13px;border-radius:18px;cursor:pointer;transition:.35s}
+nav button span{max-width:0;overflow:hidden;white-space:nowrap;transition:.35s}
+nav button.on{background:#fff;border-color:#ffb9a3;color:var(--or);box-shadow:0 2px 10px rgba(232,67,28,.3)}nav button.on span{max-width:90px}
+</style></head><body>
+<div class="bg"></div><div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div><div class="bl b4"></div><div class="gr"></div>
+<svg width="0" height="0" style="position:absolute"><symbol id="fw" viewBox="0 0 100 100"><g fill="#e8431c"><ellipse cx="50" cy="22" rx="14" ry="22"/><ellipse cx="50" cy="22" rx="14" ry="22" transform="rotate(60 50 50)"/><ellipse cx="50" cy="22" rx="14" ry="22" transform="rotate(120 50 50)"/><ellipse cx="50" cy="22" rx="14" ry="22" transform="rotate(180 50 50)"/><ellipse cx="50" cy="22" rx="14" ry="22" transform="rotate(240 50 50)"/><ellipse cx="50" cy="22" rx="14" ry="22" transform="rotate(300 50 50)"/></g><circle cx="50" cy="50" r="11" fill="#fff4e0"/></symbol></svg>
+<div id="pts"></div>
+
+<section class="pn" id="s0" data-n="s1"><div class="in hero">
+<div class="cap rv">HSA · Tiếng Anh · Giao tiếp</div>
+<h1 class="dp rv" style="transition-delay:.15s">Hội<br>th<svg class="fw"><use href="#fw"/></svg>ại</h1>
+<div class="bey rv" style="transition-delay:.3s">&amp; beyond</div>
+<p class="rv" style="transition-delay:.45s;margin-top:26px;color:#fff;font-weight:500">Lướt xuống để bắt đầu ↓</p></div></section>
+
+<section class="pn" id="s1" data-n="s1"><div class="in"><div class="cap rv">Phần 1 · Phương pháp</div><h2 class="dp rv">4 bước chinh phục hội thoại</h2>
+<p class="rv">Bài tập hội thoại (Dialogue Completion / Arrangement) kiểm tra phản xạ giao tiếp, sự am hiểu văn hóa và cách dùng ngôn ngữ trong tình huống đời thường.</p>
+<div class="card rv"><div class="row"><span class="num">1</span><div><h3>Xác định ngữ cảnh &amp; mối quan hệ</h3><p>Đọc lướt câu dẫn để biết ai nói chuyện với ai (bạn bè, thầy trò, nhân viên – khách hàng) ➤ xác định sắc thái trang trọng hay thân mật.</p></div></div></div>
+<div class="card rv"><div class="row"><span class="num">2</span><div><h3>Phân tích chức năng giao tiếp</h3><p>Câu trước là lời mời, lời khen, lời xin lỗi hay câu hỏi lấy thông tin? Mỗi chức năng có những mẫu câu đáp lại (response) tương ứng.</p></div></div></div>
+<div class="card rv"><div class="row"><span class="num">3</span><div><h3>Loại trừ phương án không phù hợp văn hóa</h3><p>Tiếng Anh rất đề cao sự lịch sự (politeness). Cẩn thận với đáp án dịch word-by-word từ tiếng Việt nhưng bất lịch sự hoặc thiếu tự nhiên.</p></div></div></div>
+<div class="card rv"><div class="row"><span class="num">4</span><div><h3>Chú ý thành ngữ &amp; cụm từ cố định</h3><p>Câu phân loại thường dùng cụm cố định, ví dụ “I couldn’t agree more” thay vì “I agree entirely”.</p></div></div></div></div></section>
+
+<section class="pn" id="s2" data-n="s1"><div class="in"><div class="cap rv">Tình huống thường gặp</div><h2 class="dp rv">4 nhóm hay ra đề</h2>
+<div class="card rv"><h3>Cảm ơn &amp; Xin lỗi</h3><p>Đáp lại lời cảm ơn và lời xin lỗi.</p><div class="ph"><span class="tg"><b>Cảm ơn:</b> You’re welcome / My pleasure</span><span class="tg"><b>Xin lỗi:</b> Never mind / No worries</span></div></div>
+<div class="card rv"><h3>Đưa ra ý kiến (Giving opinions)</h3><div class="ph"><span class="tg"><b>Đồng ý:</b> Absolutely / There’s no doubt about it</span><span class="tg"><b>Không đồng ý:</b> I’m afraid I disagree</span></div></div>
+<div class="card rv"><h3>Lời mời &amp; Đề nghị</h3><div class="ph"><span class="tg"><b>Nhận lời:</b> I’d love to</span><span class="tg"><b>Từ chối lịch sự:</b> I wish I could, but…</span></div></div>
+<div class="card rv"><h3>Giao tiếp xã giao</h3><p>Chào hỏi, khen ngợi (Compliments) và động viên (Sympathy).</p></div></div></section>
+
+<section class="pn" id="s3" data-n="s3"><div class="in"><div class="cap rv">Phần 3 · Ghi nhớ</div><h2 class="dp rv">15 mẫu câu vàng</h2><div class="pg" id="pg"></div></div></section>
+
+<section class="pn" id="s4" data-n="s4"><div class="in"><div class="cap rv">Phần 2 · Thực hành</div><h2 class="dp rv">15 hội thoại</h2><p class="rv" style="color:#fff;font-weight:500">Chọn phương án hoàn thành tốt nhất đoạn hội thoại.</p><div class="sc"><span id="sc"></span></div><div id="qs"></div><div style="text-align:center;margin-top:14px"><button class="btn" id="rs">↺ Làm lại</button></div></div></section>
+
+<nav id="nav"><button data-g="s1" class="on">🌸<span>Phương pháp</span></button><button data-g="s3">💬<span>Mẫu câu</span></button><button data-g="s4">✏️<span>Bài tập</span></button></nav>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#pts').innerHTML=[8,28,52,74,90].map((l,i)=>`<svg class="pt" style="left:${l}%;animation-delay:-${i*3.4}s;animation-duration:${14+i*3}s"><use href="#fw"/></svg>`).join('');
+let ac;function beep(a){try{ac=ac||new(window.AudioContext||window.webkitAudioContext)();a.forEach(([f,t,d,y])=>{const o=ac.createOscillator(),g=ac.createGain(),n=ac.currentTime+t;o.type=y||'sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,n);g.gain.exponentialRampToValueAtTime(.22,n+.02);g.gain.exponentialRampToValueAtTime(.0001,n+d);o.connect(g);g.connect(ac.destination);o.start(n);o.stop(n+d+.05)})}catch(e){}}
+const ok=()=>beep([[660,0,.15],[880,.12,.3]]),no=()=>beep([[220,0,.2,'sawtooth'],[150,.18,.3,'sawtooth']]);
+/* phrases */
+const PH=`My pleasure.|“Đó là niềm vinh hạnh của tôi.” Cách đáp lại lời cảm ơn một cách vô cùng lịch sự.
+I couldn’t agree more.|“Tôi hoàn toàn đồng ý.” Đồng ý tuyệt đối với quan điểm của ai đó.
+I’d love to, but I can’t.|“Tôi rất muốn nhưng không thể.” Cách từ chối lời mời lịch sự.
+Never mind.|“Không sao đâu / Đừng bận tâm.” Đáp lại lời xin lỗi từ người khác.
+No, thanks. I’m just browsing.|“Không, cảm ơn. Tôi chỉ đang xem qua thôi.” Dùng ở cửa hàng quần áo / siêu thị.
+Do you mind if I…?|“Bạn có phiền nếu tôi…?” Câu hỏi xin phép lịch sự.
+Not at all. Go ahead.|“Không phiền chút nào. Cứ tự nhiên.” Đồng ý cho câu hỏi “Do you mind…”.
+That’s very kind of you to say.|“Bạn thật tốt khi nói vậy.” Nhận lời khen khiêm tốn và lịch sự.
+Why don’t we…?|“Tại sao chúng ta không…?” Đưa ra lời gợi ý (Suggestion).
+That sounds like a brilliant idea.|“Nghe có vẻ là một ý tưởng tuyệt vời.” Đồng ý với lời đề nghị / gợi ý.
+Are you ready to order?|“Quý khách đã sẵn sàng gọi món chưa?” Câu hỏi quen thuộc của bồi bàn.
+Thanks for reminding me.|“Cảm ơn vì đã nhắc nhở.” Đáp lại lời cảnh báo (Warning).
+You can say that again.|“Tôi hoàn toàn đồng ý với bạn.” Thành ngữ dùng trong giao tiếp thường ngày.
+You had better + V|“Bạn nên làm gì đó.” Đưa ra lời khuyên (thường dùng trong tình huống y tế / sức khỏe).
+Don’t be too hard on yourself.|“Đừng quá khắt khe / dằn vặt bản thân mình.” Lời động viên, an ủi.`.split('\n').map(l=>l.split('|'));
+$('#pg').innerHTML=PH.map((p,i)=>`<div class="pc rv" style="transition-delay:${(i%4)*.08}s"><b>${p[0]}</b><span>${p[1]}</span></div>`).join('');
+/* questions: ctx~nameA~textA~nameB~textB(with ___)~opts|~ans~expl */
+const Q=`John is thanking Mary for her help with the project.~John~I really appreciate your help with this project, Mary.~Mary~___~Yes, it was very expensive.|My pleasure. Let me know if you need more.|No, I don’t think so.|I hope you will like it.~B~Đây là lời cảm ơn ➤ đáp lại lịch sự bằng <b>My pleasure</b>. Các câu còn lại không liên quan (nói về giá, phủ định, hy vọng).
+Tom and Linda are discussing the new policy.~Tom~I think the new working hours will improve our productivity.~Linda~___. People will have more time to rest.~I couldn’t agree more.|That’s entirely false.|Yes, I’m afraid not.|What a pity!~A~Linda đồng tình với ý kiến ➤ <b>I couldn’t agree more</b> (= hoàn toàn đồng ý). B phản đối, C “I’m afraid not” là từ chối, D dùng khi tiếc nuối.
+David is inviting Sarah to a concert.~David~Would you like to join us for the jazz concert this Saturday?~Sarah~___. I have to finish my deadline.~I’d love to.|Sounds great!|I’d love to, but I can’t.|Yes, please.~C~Sarah có lý do bận (deadline) ➤ từ chối lịch sự: <b>I’d love to, but I can’t</b>. A, B, D đều là nhận lời nên mâu thuẫn với vế sau.
+An employee is apologizing to his manager.~Employee~I’m so sorry for sending the report late.~Manager~___, but please make sure it doesn’t happen again.~Thanks a lot|Never mind|You’re welcome|Same to you~B~Đáp lại lời xin lỗi dùng <b>Never mind</b> (không sao đâu). A là cảm ơn, C đáp lời cảm ơn, D đáp lời chúc.
+A customer is at a clothing store.~Shop assistant~Can I help you find something?~Customer~___. I’m just browsing.~Yes, please.|No, thanks.|Not at all.|Sure, go ahead.~B~“I’m just browsing” ➤ từ chối lịch sự lời hỏi giúp đỡ: <b>No, thanks</b>. Yes, please / Sure ngược nghĩa; Not at all không đáp được câu này.
+Jane is asking for permission.~Jane~Do you mind if I turn on the air conditioner?~Peter~___. It’s getting quite hot in here.~Yes, I do.|Not at all. Go ahead.|I’d rather you did.|Thanks for asking.~B~Với “Do you mind if I…?”, đồng ý = <b>Not at all. Go ahead</b> (không phiền). “Yes, I do” nghĩa là phiền, mâu thuẫn với vế sau.
+Mike is complimenting Susan on her presentation.~Mike~You did an excellent job on the presentation today!~Susan~___. I was really nervous.~That’s very kind of you to say.|I know I am.|It doesn’t matter.|Congratulations!~A~Nhận lời khen khiêm tốn, lịch sự: <b>That’s very kind of you to say</b>. B tự khen, C “không quan trọng” thiếu lịch sự, D là lời chúc mừng.
+Two friends are making plans for the weekend.~Alice~Why don’t we go hiking in the mountains this Sunday?~Bob~___. The weather forecast says it will be sunny.~I’m sorry to hear that.|That sounds like a brilliant idea.|You can say that again.|Better luck next time.~B~“Why don’t we…?” là lời gợi ý ➤ đồng ý bằng <b>That sounds like a brilliant idea</b>. A, D dùng khi chia buồn / động viên; C dùng để đồng tình với một nhận định.
+A waiter is talking to a customer in a restaurant.~Waiter~Are you ready to order, sir?~Customer~___. Could you give us a few more minutes?~Yes, we are ready.|Not yet.|Here you are.|The bill, please.~B~Khách xin thêm vài phút ➤ chưa sẵn sàng: <b>Not yet</b>. A mâu thuẫn, C là khi đưa đồ, D là xin hóa đơn.
+Emma is consoling her friend who just failed an exam.~Emma~Don’t be too hard on yourself for failing the test.~Friend~___. I should have studied harder.~Thanks, but I feel really disappointed.|Congratulations to me.|I couldn’t agree more.|Don’t mention it.~A~Đáp lại lời an ủi: cảm ơn nhưng vẫn thất vọng, tự trách (should have studied harder). B, C, D không hợp ngữ cảnh.
+A passenger is talking to a taxi driver.~Passenger~Could you drop me off at the next corner, please?~Taxi Driver~___.~Yes, let’s go.|Sure, no problem.|I’m afraid not.|It’s too late.~B~Lời nhờ lịch sự (Could you…?) ➤ đồng ý: <b>Sure, no problem</b>. A không đúng tình huống, C từ chối vô cớ, D không phù hợp.
+Anna and Mark are discussing their weekend task.~Anna~Would you like me to help you clean the garage?~Mark~___. I can manage it by myself.~Yes, please.|That would be great.|No, thanks. It’s very kind of you.|You’re welcome.~C~Vế sau “I can manage it by myself” ➤ từ chối lịch sự: <b>No, thanks. It’s very kind of you</b>. A, B là nhận lời; D là đáp lời cảm ơn.
+A mother is warning her son.~Mother~Watch out! The floor is still wet and slippery.~Son~___. I’ll walk carefully.~You’re right.|Thanks for reminding me.|I don’t care.|Never mind.~B~Đáp lại lời cảnh báo: <b>Thanks for reminding me</b> (cảm ơn vì nhắc nhở). C bất lịch sự và mâu thuẫn “I’ll walk carefully”; D dùng đáp lời xin lỗi.
+Two colleagues are discussing a difficult task.~Colleague A~This software is really complicated to use.~Colleague B~___. It took me a whole week to get used to it.~You can say that again.|I don’t think so.|That’s a good idea.|Not completely.~A~B đồng tình với nhận xét “complicated” ➤ <b>You can say that again</b> (= hoàn toàn đồng ý). B, D phản đối; C là đáp lại gợi ý.
+Laura is asking for advice.~Laura~I’ve been having a terrible headache since morning.~Doctor~___. And drink plenty of water.~You had better take some rest.|That’s awesome.|Congratulations!|You shouldn’t sleep.~A~Tình huống y tế ➤ lời khuyên: <b>You had better + V</b> (You had better take some rest) và nối tiếp “And drink plenty of water”. B, C là sai cảm xúc; D khuyên không hợp lý.`.split('\n').map(l=>{const[c,na,ta,nb,tb,o,k,e]=l.split('~');return{c,na,ta,nb,tb,o:o.split('|'),a:'ABCD'.indexOf(k),e}});
+const A={};
+function sc(){const v=Object.values(A);$('#sc').textContent=`Đã làm ${v.length}/15 · Đúng ${v.filter(x=>x).length}`}
+function rend(){Object.keys(A).forEach(k=>delete A[k]);$('#qs').innerHTML=Q.map((q,i)=>`<div class="card rv v"><div class="cap">Question ${i+1}</div><div class="ctx">${q.c}</div><div class="bub l"><small>${q.na}</small>“${q.ta}”</div><div class="bub r"><small>${q.nb}</small>“${q.tb.replace('___',`<u id="u${i}">________</u>`)}”</div><div class="opts">${q.o.map((o,k)=>`<button class="opt" data-i="${i}" data-k="${k}"><b>${'ABCD'[k]}.</b>${o}</button>`).join('')}</div><div id="e${i}"></div></div>`).join('');sc()}
+rend();
+document.addEventListener('click',e=>{let b;
+if(b=e.target.closest('.opt')){const i=+b.dataset.i,k=+b.dataset.k,q=Q[i];if(A[i]!==undefined)return;const g=k==q.a;A[i]=g?1:0;(g?ok:no)();$$(`.opt[data-i="${i}"]`).forEach((x,j)=>{x.disabled=true;x.classList.add(j==q.a?'ok':j==k?'no':'dim')});const u=$('#u'+i);u.textContent=q.o[g?k:q.a];u.className=g?'ok':'no';$('#e'+i).innerHTML=`<div class="exp ${g?'':'bd'}">${g?'✅ Chính xác!':'❌ Chưa đúng.'} Đáp án: <b>${'ABCD'[q.a]}</b>.<p style="margin:6px 0 0">${q.e}</p></div>`;sc();return}
+if(e.target.closest('#rs')){rend();$('#s4').scrollIntoView({behavior:'smooth'});return}
+if(b=e.target.closest('#nav button'))$('#'+b.dataset.g).scrollIntoView({behavior:'smooth'})});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}}),{threshold:.1});$$('.rv').forEach(x=>io.observe(x));
+const io2=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting)$$('#nav button').forEach(b=>b.classList.toggle('on',b.dataset.g==x.target.dataset.n))}),{rootMargin:'-45% 0px -50% 0px'});$$('section[data-n]').forEach(s=>io2.observe(s));
+</script></body></html>
